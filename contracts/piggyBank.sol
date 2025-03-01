@@ -46,9 +46,16 @@ mapping(address => bool) public withdrawnByToken;
         startTime = block.timestamp;
         deadline = _deadline;
        penaltyPercentage = 15;
-       address  USDT = 0xd9145CCE52D386f254917e481eB44e9943F39138;
-       address  USDC = 0xddaAd340b0f1Ef65169Ae5E41A8b10776a75482d;
-       address  DAI = 0x0fC5025C764cE34df352757e82f7B5c4Df39A836;
+
+    //    custom tokens
+    //    address  USDT = 0xd9145CCE52D386f254917e481eB44e9943F39138;
+    //    address  USDC = 0xddaAd340b0f1Ef65169Ae5E41A8b10776a75482d;
+    //    address  DAI = 0x0fC5025C764cE34df352757e82f7B5c4Df39A836;
+    
+    //real token adresses
+    address  USDT = 0xdAC17F958D2ee523a2206206994597C13D831ec7
+   address  USDC = 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48
+  address  DAI = 0x6B175474E89094C44Da98b954EedeAC495271d0F
      supportedToken = [USDT,USDC , DAI ];
      developerAddress =  _developerAddress;
      // 0xd2a5bC10698FD955D1Fe6cb468a17809A08fd005 0xddaAd340b0f1Ef65169Ae5E41A8b10776a75482d
